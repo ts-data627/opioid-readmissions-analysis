@@ -1,0 +1,61 @@
+CREATE TABLE IF NOT EXISTS hrrp_clean (
+    id SERIAL PRIMARY KEY,
+    facility_name VARCHAR(255),
+    facility_id INT,
+    state CHAR(2),
+    measure_name VARCHAR(255),
+    number_discharges INT,
+    footnote VARCHAR(3),
+    excess_read_ratio DECIMAL(6,4),
+    predicted_read_rate DECIMAL(6,4),
+    expected_read_rate DECIMAL(6,4),
+    num_readmissions INT,
+    read_rate_buckets VARCHAR(10),
+    start_date DATE,
+    end_date DATE
+);
+
+CREATE TABLE IF NOT EXISTS opioid_clean (
+    id SERIAL PRIMARY KEY,
+    year INT,
+    prscrbr_geo_lvl VARCHAR(255),  
+    prscrbr_geo_cd INT,
+    prscrbr_geo_desc VARCHAR(255),
+    ruca_cd DECIMAL(3,1),
+    breakout_type VARCHAR(11),
+    breakout VARCHAR(7),
+    tot_prscrbrs INT,
+    tot_opioid_prscrbrs INT,
+    tot_opioid_clms INT,
+    tot_clms INT,
+    opioid_prscrbng_rate DECIMAL(5,2),
+    opioid_prscrbng_rate_5y_chg DECIMAL(5,2),
+    opioid_prscrbng_rate_1y_chg DECIMAL(5,2),
+    la_tot_opioid_clms FLOAT,
+    la_opioid_prscrbng_rate DECIMAL(5,2),
+    la_opioid_prscrbng_rate_5y_chg DECIMAL(5,2),
+    la_opioid_prscrbng_rate_1y_chg DECIMAL(5,2)
+);
+
+CREATE TABLE IF NOT EXISTS opioid_state (
+    id SERIAL PRIMARY KEY,
+    year INT,
+    prscrbr_geo_lvl VARCHAR(255),  
+    prscrbr_geo_cd INT,
+    prscrbr_geo_desc VARCHAR(255),
+    state_abbrev VARCHAR(2),
+    ruca_cd DECIMAL(3,1),
+    breakout_type VARCHAR(11),
+    breakout VARCHAR(7),
+    tot_prscrbrs INT,
+    tot_opioid_prscrbrs INT,
+    tot_opioid_clms INT,
+    tot_clms INT,
+    opioid_prscrbng_rate DECIMAL(5,2),
+    opioid_prscrbng_rate_5y_chg DECIMAL(5,2),
+    opioid_prscrbng_rate_1y_chg DECIMAL(5,2),
+    la_tot_opioid_clms FLOAT,
+    la_opioid_prscrbng_rate DECIMAL(5,2),
+    la_opioid_prscrbng_rate_5y_chg DECIMAL(5,2),
+    la_opioid_prscrbng_rate_1y_chg DECIMAL(5,2)
+)

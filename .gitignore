@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Raw data files (large, not code)
+*.csv
+*.hyper
+
+# Environment / credentials
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+my_venv/
+my_env/
