@@ -4,7 +4,7 @@
 
 Do states and hospitals with higher opioid prescribing rates also show higher hospital readmission rates? I investigated this from multiple angles — overall prescribing volume, long-acting opioid prescribing specifically, rural vs. urban prescribing patterns, and facility-level outliers — to see whether opioid prescribing is a meaningful driver of readmissions, or whether the relationship is weaker than the popular narrative suggests.
 
-**[View the interactive dashboard on Tableau Public →](https://public.tableau.com/shared/R9SZDH4YS?:display_count=n&:origin=viz_share_link)**
+**[View the interactive dashboard on Tableau Public →](https://public.tableau.com/views/OpioidPrescribingHospitalReadmissionsState-LevelAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link)**
 
 ## Key Findings
 
